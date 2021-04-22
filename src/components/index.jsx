@@ -15,7 +15,6 @@ const Assignment = () => {
 
   useEffect(() => {
     const response = getAuctionData();
-    console.log(response);
     response.then(res => res.json())
       .then(resJson => setData(resJson))
       .catch(e => console.error(e));
@@ -28,7 +27,6 @@ const Assignment = () => {
       <ul className="product__container">
         {
           data.length > 0 && data.map((obj, idx) => {
-            console.log(obj,idx);
             return <Card key={obj.url} data={obj} />
           })
         }
