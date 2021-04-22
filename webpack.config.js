@@ -27,7 +27,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
+        test: /\.(png|jpg|jpeg|gif|svg)$/,
         loader:'url-loader',
         options: {
           publicPath : './dist/',

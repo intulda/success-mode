@@ -15,7 +15,7 @@ function Timer(closingDay) {
       if(distance < 0) {
         count.current = `경매 종료`;
       } else {
-        const result = `D-${day} ${hour.toString().length < 10 ? '0' + hour : hour}:${min.toString().length < 10 ? '0' + min : min}:${second.toString().length < 2 ? '0' + second : second} 남음`;
+        const result = `D-${day} ${hour.toString().length < 2 ? '0' + hour : hour}:${min.toString().length < 2 ? '0' + min : min}:${second.toString().length < 2 ? '0' + second : second} 남음`;
         count.current = result;
       }
     }, 1000);
